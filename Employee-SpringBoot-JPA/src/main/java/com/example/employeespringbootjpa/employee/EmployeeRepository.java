@@ -1,2 +1,8 @@
-package com.example.employeespringbootjpa.employee;public class EmployeeRepository {
+package com.example.employeespringbootjpa.employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
+
 }
